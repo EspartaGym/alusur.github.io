@@ -1,0 +1,558 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* Establece el ancho y la altura del encabezado */
+  height: 80px;
+}
+
+/* Estilos para el logo */
+.logo img {
+  max-height: 50px;
+  /* Establece la altura máxima del logo */
+  max-height: 60px;
+  width: 50%;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px; /* Agrega un margen de 20px a la derecha del menú de navegación */
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f1c40f;
+}
+
+/* Estilos para el menú de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    /* Muestra el icono del menú en dispositivos móviles */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    /* Establece el espacio entre los elementos del menú en dispositivos móviles */
+    margin: 10px 0;
+  }
+}
+
+/* Estilos mejorados */
+header {
+  border-bottom: 3px solid #0712ad;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #0712ad;
+  color: #fff;
+}
+ 
+  .container {
+    /* Agrega un padding de 2.5% (50px en pantallas grandes) al contenedor principal */
+    padding: 2.5%;
+  }
+
+  /* Estilos generales para la sección hero */
+.hero {
+  background-color: #f0eded;
+  padding: 50px 0;
+  margin-top: 200px;
+ 
+}
+
+/* Estilos para el contenedor de la sección hero */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estilos para el contenedor del logo */
+.hero-logo {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del logo */
+.hero-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+/* Estilos para el contenedor del texto explicativo */
+.hero-description {
+  font-size: 40px;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Estilos para el botón de llamado a la acción */
+.btn-cta {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #253353;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #0712ad;
+}
+
+.gallery {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .row img {
+    width: calc(33.33% - 10px);
+    object-fit: cover;
+    height: 600px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .row img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .historia-seccion {
+    background: linear-gradient(to bottom, #0f57f1, #051937);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .historia-seccion h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .historia-seccion p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .historia-seccion p {
+      font-size: 24px;
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 200px;
+  }
+  
+  .contacto, .legales {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .contacto h3, .legales h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .contacto p, .legales p {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  
+  .legales a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .legales a:hover {
+    text-decoration: underline;
+  }
+  /* Estilos para la sección de servicios */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    }
+    
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .service {
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    flex-basis: calc(33.33% - px);
+    margin-right: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .service img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    }
+    
+    .service-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    }
+    
+    .service-description {
+    margin: 0;
+    font-size: 16px;
+    text-align: justify;
+    }
+  
+    .worked-for {
+      padding: 50px 0;
+      text-align: center;
+      margin-top: 200px;
+      background-image: linear-gradient(135deg, #3f3f4138, #1818182a);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    .worked-for h2 {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #000000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .worked-for-logos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    
+    .logo-container {
+      background-color: rgba(19, 17, 17, 0.15);
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .worked-for-logos img {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    .logo-container:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      .worked-for h2 {
+        font-size: 36px;
+      }
+    
+      .worked-for-logos img {
+        width: 100%;
+      }
+    
+      .worked-for-logos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    
+    
+    
+    
+  .reseñas {
+    background-color: #F9F9F9;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reseñas h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  
+  .reseñas p {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .reseñas .col-md-6 {
+    text-align: center;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+  }
+  
+  .reseñas p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .reseñas h2 {
+      font-size: 24px;
+    }
+  
+    .reseñas p {
+      font-size: 16px;
+    }
+  
+    .reseñas .col-md-6 {
+      flex: 0 0 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  
+  /* Main section */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Title */
+main h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+main h1:hover {
+  color: #666;
+}
+
+
+/* Contact Info */
+.info {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.info p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.info strong {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Map */
+.mapa {
+  flex-basis: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.mapa a {
+  cursor: pointer;
+}
+
+.btn-mapa {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #253353;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  width: 1000px;
+}
+
+.btn-mapa:hover {
+  background-color: #0712ad;
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(52, 58, 64, 0.9);
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.cookie-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.cookie-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#cookie-accept {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+#cookie-accept:hover {
+  background-color: #0069d9;
+}
