@@ -54,7 +54,7 @@ nav {
 }
 
 /* Estilos para el menú de navegación en dispositivos móviles */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .menu {
     display: none;
     flex-direction: column;
