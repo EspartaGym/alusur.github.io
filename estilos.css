@@ -80,10 +80,9 @@ nav {
     position: absolute;
     top: 80px;
     left: 0;
-    width: 100%;
+    width: 90%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #0712ad;
-    scale: 90%;
+    border-bottom: 3px solid #0712ad
   }
 
   .menu a{
