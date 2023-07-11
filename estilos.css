@@ -80,14 +80,14 @@ nav {
     position: absolute;
     top: 80px;
     left: 0;
-    width: 90%;
+    width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #0712ad
   }
 
   .menu a{
 
-font-size: 10px;
+font-size: 7px;
 
   }
 
@@ -114,9 +114,9 @@ font-size: 10px;
   }
 
   .menu li {
-    margin: 10px 0;
+    margin: 7px 0;
     /* Establece el espacio entre los elementos del menú en dispositivos móviles */
-    margin: 10px 0;
+    margin: 7px 0;
   }
 }
 
