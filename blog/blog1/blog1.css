@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-size:5em ;
+}
+
+h2{
+    font-size:4em ;
+}
+
+h3{
+    font-size:3em ;
+}
+
+p{
+    font-size: 1.7em;
+}
+
+a{
+    font-size:1.7em ;
+}
+body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    /* Alinea el logo y el menú */
+    align-items: center;
+    border-bottom: solid 3px #0712ad;
+  }
+
+  .logo img {
+    height: 50px;
+    max-width: fit-content;
+    border-radius: 0em;
+    box-shadow: 0px 0px 0px black ;
+    /* Altura fija para el logo */
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 0 15px;
+  }
+
+  .menu a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .menu a:hover {
+    background-color: #0712ad;
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: none;
+    /* Ocultar por defecto en pantallas grandes */
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+
+
+  .menu {
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  .menu a {
+    font-size: 16px;
+    /* Ajustar el tamaño de fuente para mejorar la legibilidad */
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+    /* Espacio entre elementos del menú */
+  }
+
+  .menu-icon {
+    display: block;
+    /* Mostrar el ícono del menú en dispositivos móviles */
+  }
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3em;
+    margin-top: 5em;
+}
+
+img{
+    width: 60em;
+    height: 40em;
+    border-radius: 2em;
+    box-shadow: 2px 2px 4px black;
+}
+
+#segunda{
+    flex-direction: row-reverse;
+}
+
+.texto{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+@media (max-width: 860px) {
+
+  body{
+    width: 90%;
+  }
+
+  main{
+    margin-top: 25em;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #segunda{
+    flex-direction: column;
+  }
+
+  img{
+    width: 35em;
+    height: 25em;
+  }
+
+  .texto{
+    text-align: justify;
+    gap: 3em;
+  }
+}
