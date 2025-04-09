@@ -1,0 +1,303 @@
+/* Estilos específicos para la página de servicios */
+
+/* Hero section ajustes */
+.hero-section {
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.8)), 
+                url('../imagenes/imagen 4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section .titulo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primario);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hero-section .titulo::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--color-acento);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hero-section .subtitulo {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-texto-suave);
+  }
+  
+  /* Tarjetas de servicios */
+  .servicio-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    background-color: white;
+    border: none;
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicio-card .card-title {
+    color: var(--color-primario);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .servicio-card .card-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-acento);
+    bottom: 0;
+    left: 0;
+  }
+  
+  .servicio-card .card-body {
+    padding: 1.75rem 1.5rem;
+  }
+  
+  .servicio-card .card-text {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .servicio-card img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .servicio-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Sección de proceso personalizado */
+  .proceso-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .proceso-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proceso-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(7, 18, 173, 0.05);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .proceso-card:hover .icon-wrapper {
+    background-color: var(--color-primario);
+    transform: scale(1.1);
+  }
+  
+  .proceso-card:hover .icon-wrapper img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .proceso-card .icon-wrapper img {
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .proceso-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+  }
+  
+  .proceso-card p {
+    font-size: 0.9rem;
+    color: var(--color-texto-suave);
+    margin-bottom: 0;
+  }
+  
+  /* Sección CTA (Call to Action) */
+  .cta-section {
+    background: linear-gradient(to right, rgba(7, 18, 173, 0.95), rgba(0, 123, 255, 0.95)), 
+                url('../imagenes/imagen 1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    padding: 70px 0;
+  }
+  
+  .cta-section h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-section h2::after {
+    background-color: white;
+  }
+  
+  .cta-section p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  .cta-section .btn-cta {
+    background-color: white;
+    color: var(--color-primario);
+    border: 2px solid white;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-section .btn-cta:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  /* Efecto hover en enlaces ID */
+  a[href^="#"]:not(.btn-cta):hover {
+    color: var(--color-acento);
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 991.98px) {
+    .servicio-card .card-body {
+      padding: 1.5rem 1.25rem;
+    }
+    
+    .servicio-card .card-title {
+      font-size: 1.3rem;
+    }
+    
+    .hero-section {
+      padding: 70px 0 60px;
+    }
+    
+    .hero-section .titulo {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .hero-section {
+      padding: 60px 0 50px;
+    }
+    
+    .hero-section .titulo {
+      font-size: 1.8rem;
+    }
+    
+    .hero-section .subtitulo {
+      font-size: 1.1rem;
+    }
+    
+    .proceso-card {
+      padding: 1.5rem 1rem;
+    }
+    
+    .proceso-card .icon-wrapper {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .proceso-card .icon-wrapper img {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .servicio-card .row {
+      flex-direction: column;
+    }
+    
+    .servicio-card .col-md-5 {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+  
+  /* Mejora visual para tarjetas de servicio en móviles */
+  @media (max-width: 575.98px) {
+    .servicio-card .card-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .servicio-card .card-title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .servicio-card .card-text {
+      text-align: center;
+    }
+    
+    .cta-section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .cta-section p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Ajustes de accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .servicio-card,
+    .proceso-card,
+    .servicio-card img,
+    .fade-in-up,
+    .fade-in {
+      transition: none !important;
+      animation: none !important;
+      transform: none !important;
+    }
+  }

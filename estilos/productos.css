@@ -1,0 +1,233 @@
+/* Estilos específicos para la página de productos/trabajos realizados */
+
+/* Paleta de colores coherente con base.css */
+:root {
+    --client-bg-color: rgba(7, 18, 173, 0.03);
+    --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --hover-transform: translateY(-10px);
+    --transition-time: 0.4s;
+  }
+  
+  /* Sección de clientes/empresas */
+  .clients-section {
+    background-color: var(--client-bg-color);
+    padding: 70px 0;
+    position: relative;
+  }
+  
+  .clients-section h2 {
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .clients-section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-acento);
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .client-logo {
+    background-color: white;
+    border-radius: 8px;
+    height: 160px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all var(--transition-time) ease;
+  }
+  
+  .client-logo:hover {
+    transform: var(--hover-transform);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .client-logo img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    filter: grayscale(30%);
+  }
+  
+  .client-logo:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+  
+  /* Sección de Blog */
+  .blog-section {
+    padding: 70px 0;
+    background: linear-gradient(to bottom, white, var(--color-gris-claro));
+  }
+  
+  .blog-section h2 {
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .blog-section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-acento);
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .blog-card {
+    transition: all var(--transition-time) ease;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .blog-card:hover {
+    transform: var(--hover-transform);
+  }
+  
+  .blog-card .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all var(--transition-time) ease;
+  }
+  
+  .blog-card:hover .card {
+    box-shadow: var(--card-shadow);
+  }
+  
+  .blog-card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  
+  .blog-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  .blog-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .blog-card .card-title {
+    color: var(--color-secundario);
+    font-weight: 600;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-card:hover .card-title {
+    color: var(--color-primario);
+  }
+  
+  /* Animaciones de entrada */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 991.98px) {
+    .clients-section,
+    .blog-section {
+      padding: 50px 0;
+    }
+    
+    .client-logo {
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .clients-section,
+    .blog-section {
+      padding: 40px 0;
+    }
+    
+    .client-logo {
+      height: 120px;
+      padding: 15px;
+    }
+    
+    .blog-card .card-img-top {
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .client-logo {
+      height: 110px;
+      padding: 12px;
+    }
+    
+    .blog-card .card-img-top {
+      height: 180px;
+    }
+    
+    .blog-card .card-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Mejoras de accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .client-logo,
+    .blog-card,
+    .blog-card .card-img-top,
+    .fade-in {
+      transition: none !important;
+      animation: none !important;
+      transform: none !important;
+    }
+  }
+  
+  /* Estilos de scrollbar personalizados (solo para navegadores webkit) */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--color-gris-claro);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primario);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primario-hover);
+  }

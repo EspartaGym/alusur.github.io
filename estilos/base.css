@@ -1,0 +1,392 @@
+/* Variables de color y estilos específicos que complementan Bootstrap */
+
+/* Variables de color */
+:root {
+  /* Colores primarios */
+  --color-primario: #0712ad; /* azul oscuro principal */
+  --color-primario-hover: #0056b3; /* azul oscuro hover */
+  --color-acento: #007bff; /* azul acento botones */
+  --color-acento-hover: #0069d9; /* hover para azul acento */
+  
+  /* Colores secundarios */
+  --color-secundario: #0a58ca; /* títulos de sección */
+  --color-highlight: #4a86e8; /* resaltado texto */
+  --color-resaltado: #fc0d0d; /* rojo para h2 destacado */
+  
+  /* Colores neutros */
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f5f5f5;
+  --color-gris-medio: #eeeeee;
+  --color-gris: #e4e4e4;
+  --color-texto: #333333;
+  --color-texto-suave: #555;
+  
+  /* Colores del footer */
+  --color-footer-fondo: #1a1a2e;
+  --color-footer-texto: #fff;
+  --color-footer-secundario: #ddd;
+  
+  /* Otros */
+  --color-shadow-card: rgba(145, 134, 134, 0.15);
+  --color-overlay-negro: rgba(0, 0, 0, 0.7);
+  --color-overlay-blanco: rgba(255, 255, 255, 0.7);
+}
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Estilos generales para complementar Bootstrap */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-texto);
+  overflow-x: hidden;
+}
+
+/* Tipografía personalizada */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-secundario);
+}
+
+h2 {
+  position: relative;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-acento);
+  bottom: -10px;
+  left: 0;
+}
+
+h2.text-center:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Personalización de enlaces */
+a {
+  color: var(--color-primario);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primario-hover);
+}
+
+/* Personalización del navbar de Bootstrap */
+/* Personalización del navbar de Bootstrap */
+.navbar {
+  background-color: var(--color-blanco);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 0.8rem 0;
+  width: 100%;
+}
+
+/* Ajustes para que ocupe el ancho completo */
+.sticky-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Para que el contenido no quede bajo el navbar fijo */
+body {
+  padding-top: 80px; /* Ajustar según la altura del navbar */
+}
+
+.navbar-light .navbar-nav {
+  gap: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-texto);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  position: relative;
+  padding: 0.7rem 1.2rem;
+  margin: 0 0.2rem;
+  border-radius: var(--border-radius-md);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-acento);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after,
+.navbar-light .navbar-nav .nav-link.active::after {
+  width: 50%;
+  left: 25%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--color-primario);
+  background-color: rgba(7, 18, 173, 0.05);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: 700;
+  color: var(--color-primario);
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  height: 55px;
+  transition: height 0.3s ease;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.4rem;
+  background-color: rgba(7, 18, 173, 0.08);
+  border-radius: 6px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar.scrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .navbar-brand img {
+  height: 42px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+}
+/* Botón CTA personalizado */
+.btn-cta {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-primario);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn-cta:hover {
+  color: var(--color-blanco);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.btn-cta:hover::before {
+  width: 100%;
+}
+
+/* Footer personalizado */
+footer {
+  background-color: var(--color-footer-fondo);
+  color: var(--color-footer-texto);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-primario), var(--color-acento));
+}
+
+footer h3 {
+  color: var(--color-footer-secundario);
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer h3::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-acento);
+  bottom: -8px;
+  left: 0;
+}
+
+footer a {
+  color: var(--color-footer-texto);
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: var(--color-acento);
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+.contacto i {
+  margin-right: 0.5rem;
+  color: var(--color-acento);
+  width: 16px;
+  text-align: center;
+}
+
+.contacto p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  color: var(--color-footer-texto);
+}
+
+.social-icons a:hover {
+  background-color: var(--color-acento);
+  transform: translateY(-5px);
+  color: var(--color-blanco);
+}
+
+.seo-keywords {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.seo-keywords span {
+  opacity: 0.5;
+  font-size: 0.85rem;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Animaciones básicas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Botón volver arriba */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  transition: all 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--color-acento);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

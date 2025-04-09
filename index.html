@@ -3,156 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.6">
-  <title>Carpintería de Aluminio en Alicante | Aluminios del Sureste</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpintería de Aluminio en Alicante | Ventanas y Puertas | Aluminios del Sureste</title>
   <meta name="keywords"
     content="Carpintería de aluminio Alicante, Ventanas de aluminio personalizadas, Puertas de aluminio modernas, Cerramientos de aluminio eficientes, Fabricación de estructuras de aluminio, Carpinteros de aluminio profesionales, Trabajos en aluminio a medida, Diseño y montaje en aluminio, Calidad en carpintería de aluminio, Aluminio de alta resistencia, Soluciones en aluminio para hogar y negocio, Expertos en carpintería metálica en Alicante, Carpintería de aluminio de última generación, Especialistas en ventanas termoacústicas de aluminio, Cerramientos y porches de aluminio en Alicante">
   <meta name="description"
-    content="Líderes en carpintería de aluminio en Alicante. Ofrecemos ventanas, puertas, y cerramientos de alta calidad. Servicios personalizados para tu hogar u oficina. ¡Contacta con Aluminios del Sureste hoy!">
-  <link rel="stylesheet" href="estilos.css">
-  <script src="script.js" defer></script>
+    content="Empresa líder en carpintería de aluminio en Alicante con más de 30 años de experiencia. Ofrecemos ventanas, puertas, cerramientos y pérgolas bioclimáticas de alta calidad. Materiales premium y acabados perfectos garantizados. Solicita presupuesto sin compromiso.">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="stylesheet" href="estilos/index.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Favicon -->
   <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+  
+  <!-- Scripts -->
+  <script src="js/base.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="imagenes/logoalusur.png" alt="Logo de Carpintería de Aluminio"></a>
-    </div>
-    <nav>
-      <div class="menu-icon"><i class="fa fa-bars"></i></div>
-      <ul class="menu">
-        <li><a href="index.html" class="cta">Inicio</a></li>
-        <li><a href="servicios.html" class="cta">Servicios</a></li>
-        <li><a href="Productos.html" class="cta">Trabajos Realizados</a></li>
-        <li><a href="contacto.html" class="cta">Contacto</a></li>
-      </ul>
+  <header id="header" class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logoalusur.png" alt="Logo de Carpintería de Aluminio Aluminios del Sureste">
+        </a>
+        
+        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Desplegar navegación">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto menu">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/productos.html">Trabajos Realizados</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero d-flex align-items-center">
     <div class="container">
-      <div class="hero-logo">
-        <img src="imagenes/logoalusur.png" alt="Logo de Aluminios del Sureste">
+      <div class="row align-items-center">
+        <div class="col-lg-5 hero-logo fade-in text-center text-lg-start">
+          <img src="imagenes/logoalusur.png" alt="Logo de Aluminios del Sureste - Carpintería de aluminio en Alicante" class="img-fluid">
+        </div>
+        <div class="col-lg-7 hero-description text-center text-lg-start mt-4 mt-lg-0">
+          <h1 class="titulo fade-in">Expertos en Carpintería de Aluminio en Alicante</h1>
+          <h2 class="subtitulo fade-in delay-1">Más de 30 años transformando hogares y negocios con soluciones de aluminio de máxima calidad y eficiencia energética</h2>
+          <a href="paginas/servicios.html" class="btn-cta fade-in delay-2">Descubrir nuestros servicios</a>
+        </div>
       </div>
-      <div class="hero-description">
-        <h1 class="titulo">Carpinteria de aluminio en Alicante</h1>
-        <h2 class="subtitulo">Con mas de 30 años de experiencia proporcionamos soluciones en carpinteria de aluminio en
-          alicante </h2>
-        <a href="servicios.html" class="btn-cta">Nuestros servicios</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Descubre más</span>
+      <div class="chevron"></div>
+    </div>
+  </section>
+
+  
+<section class="about-section py-5">
+  <div class="container">
+    <div class="desarrollo position-relative overflow-hidden mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-section mb-4 mb-lg-0 text-center text-lg-start">
+          <h2 class="highlight mb-4 mx-auto mx-lg-0">¡Más de 30 años creando espacios perfectos!</h2>
+          <p>En <strong>Aluminios del Sureste</strong>, somos especialistas en <strong>carpintería de aluminio en Alicante</strong> que combinamos tradición artesanal y tecnología de vanguardia para ofrecerte soluciones que transforman tus espacios.</p>
+          <p>Nuestras <strong>ventanas de aluminio personalizadas</strong> y <strong>cerramientos térmicos</strong> no solo embellecen tu hogar, sino que también mejoran su eficiencia energética, proporcionando un confort superior durante todo el año.</p>
+          <p>Con más de tres décadas de experiencia, nos hemos consolidado como <strong>líderes en el mercado alicantino</strong>, brindando innovación, diseño y calidad en cada proyecto de carpintería metálica que realizamos.</p>
+          <p>Nuestro equipo de expertos carpinteros en <strong>Alicante</strong> está siempre disponible para ofrecerte asesoramiento personalizado y soluciones a medida que se adaptan perfectamente a tus necesidades y presupuesto.</p>
+        </div>
+        <div class="col-lg-6 image-section">
+          <div class="img-wrapper">
+            <img src="imagenes/imagen 1.jpg" alt="Puerta de aluminio de alta calidad en Alicante" loading="lazy" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="desarrollo position-relative overflow-hidden mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 image-section mb-4 mb-lg-0 order-2 order-lg-1">
+          <div class="img-wrapper">
+            <img src="imagenes/imagen 2.jpg" alt="Trabajo profesional de carpintería de aluminio en Alicante" loading="lazy" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        <div class="col-lg-6 text-section order-1 order-lg-2 text-center text-lg-start">
+          <h2 class="highlight mb-4 mx-auto mx-lg-0">Carpintería de aluminio de máxima confianza en Alicante</h2>
+          <p>Con más de <strong>30 años en el sector de la carpintería de aluminio</strong> y metálica, nuestra reputación en Alicante se ha construido sobre la base de la excelencia y el compromiso con cada cliente.</p>
+          <p>Desde <strong>ventanas de aluminio</strong> hasta <strong>puertas correderas</strong> y <strong>cerramientos bioclimáticos</strong>, nuestras soluciones a medida están diseñadas para mejorar la estética, funcionalidad y eficiencia energética de tu hogar o negocio.</p>
+          <p>Utilizamos exclusivamente <strong>materiales de aluminio de primera calidad</strong> con los mejores sistemas de aislamiento térmico y acústico, garantizando productos duraderos y altamente eficientes que superan las normativas más exigentes.</p>
+          <p>Nuestro equipo de profesionales en Alicante se encarga de todo el proceso, desde el diseño inicial hasta la instalación final, asegurándose de que cada proyecto cumpla perfectamente con tus expectativas y necesidades específicas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="why-choose-us section py-5">
+    <div class="container">
+      <h2 class="text-center mb-3">¿Por qué elegir nuestra Carpintería de Aluminio en Alicante?</h2>
+      <p class="text-center mb-5">Descubre las razones que nos convierten en la opción preferida para soluciones de carpintería de aluminio en toda la provincia de Alicante.</p>
+      <div class="row card-container g-4">
+          <div class="col-md-6 col-lg-4 fade-in-up">
+              <div class="card h-100">
+                  <div class="card-icon"><i class="fas fa-window-maximize"></i></div>
+                  <h3>Compromiso con la Calidad</h3>
+                  <p>En Aluminios del Sureste, nuestro principal compromiso es ofrecer la máxima calidad en cada proyecto. Utilizamos sistemas de aluminio de última generación con los mejores valores de aislamiento térmico y acústico, garantizando productos que no solo embellecen tu espacio, sino que también contribuyen a un hogar más eficiente y confortable.</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in-up delay-1">
+              <div class="card h-100">
+                  <div class="card-icon"><i class="fas fa-hard-hat"></i></div>
+                  <h3>Experiencia y Profesionalismo</h3>
+                  <p>Nuestras tres décadas en el sector de la carpintería de aluminio en Alicante se reflejan en cada proyecto. Contamos con un equipo de técnicos y carpinteros altamente cualificados, comprometidos con la excelencia y la atención personalizada. Tu satisfacción es nuestra prioridad, y nuestro profesionalismo garantiza resultados excepcionales en cada instalación.</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in-up delay-2">
+              <div class="card h-100">
+                  <div class="card-icon"><i class="fas fa-tools"></i></div>
+                  <h3>Materiales de Primera Calidad</h3>
+                  <p>Seleccionamos cuidadosamente cada material, trabajando exclusivamente con proveedores de reconocido prestigio que ofrecen garantías reales. Nuestros perfiles de aluminio y sistemas de herrajes combinan durabilidad, estética y funcionalidad, asegurando que tus ventanas, puertas y cerramientos mantengan su belleza y prestaciones durante décadas.</p>
+              </div>
+          </div>
       </div>
     </div>
   </section>
 
-  <div class="desarollo">
-    <div class="text-section">
-      <h2 class="highlight">¡Más de 30 años de experiencia!</h2>
-      <p>En nuestra carpintería de aluminio en Alicante, combinamos tradición y tecnología para ofrecerte los mejores servicios.</p>
-      <p>Nos especializamos en soluciones personalizadas de carpintería de aluminio, garantizando calidad y durabilidad en cada proyecto.</p>
-      <p>Con más de tres décadas de experiencia, somos líderes en el mercado alicantino, brindando innovación y diseño en cada trabajo.</p>
-      <p>Nuestro equipo de expertos en Alicante está siempre disponible para ofrecerte asesoramiento personalizado y soluciones a medida en carpintería metálica y de aluminio.</p>
-    </div>
-    <div class="image-section">
-      <img src="imagenes/imagen 1.jpg" alt="Puerta de aluminio">
-    </div>
-  </div>
-
-  <div class="desarollo2">
-    <div class="text-section">
-      <h2 class="highlight">Puedes confiar en nuestra Carpintería de Aluminio en Alicante</h2>
-      <p>Con más de 30 años ofreciendo soluciones integrales en carpintería de aluminio y metálica, nuestra reputación en Alicante nos precede.</p>
-      <p>Desde ventanas de aluminio hasta puertas y cerramientos, nuestros servicios a medida están diseñados para satisfacer todas tus necesidades.</p>
-      <p>Nuestra experiencia en el sector es tu mejor garantía de calidad y eficiencia, asegurando resultados duraderos y estéticamente atractivos.</p>
-      <p>Nuestro equipo de expertos está siempre disponible para ofrecerte asesoramiento personalizado y detallado, asegurándose de que cada proyecto en Alicante cumpla con tus expectativas y necesidades.</p>
-    </div>
-    <div class="image-section">
-      <img src="imagenes/imagen 2.jpg" alt="Trabajo de carpintería de aluminio en Alicante">
-    </div>
-  </div>
-
-
-  <section class="why-choose-us">
-    <h2>¿Por qué elegir nuestra Carpintería de Aluminio en Alicante?</h2>
-    <p> Descubre las razones clave que nos convierten en tu mejor opción para soluciones de carpintería de aluminio en Alicante.</p>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-icon"><img src="imagenes/iconos/ventana.png" alt="Compromiso con la calidad en carpintería de aluminio"></div>
-            <h3>Compromiso con la Calidad</h3>
-            <p>En Alusur Carpintería de Aluminio, nuestro principal compromiso es con la calidad. Utilizamos materiales de aluminio de primera línea, garantizando alta resistencia y durabilidad. Cada producto está diseñado para no solo cumplir con tus expectativas, sino para superarlas, asegurando una inversión duradera y confiable.</p>
+  <section class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros servicios especializados en Alicante</h2>
+      <div class="row g-4 servicios-container">
+        <!-- Servicio 1 -->
+        <div class="col-md-6 col-lg-6 fade-in-up">
+          <div class="servicio h-100">
+            <img src="imagenes/imagen 3.jpg" alt="Expertos en Carpintería Metálica en Alicante - estructuras a medida" loading="lazy" class="img-fluid">
+            <div class="servicio-info">
+              <h3>Carpintería Metálica General en Alicante</h3>
+              <p>Ofrecemos servicios integrales en la fabricación e instalación de estructuras metálicas y de aluminio para todo tipo de proyectos. Nuestra experiencia nos permite crear desde barandillas y rejas decorativas hasta grandes estructuras para edificios comerciales, siempre con acabados perfectos y materiales de máxima resistencia que cumplen con todas las normativas vigentes.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-            <div class="card-icon"><img src="imagenes/iconos/trabajadores.png" alt="Experiencia y profesionalismo en carpintería de aluminio"></div>
-            <h3>Experiencia y Profesionalismo</h3>
-            <p>Nuestros años de experiencia en el sector de la carpintería de aluminio en Alicante se reflejan en cada proyecto. Contamos con un equipo de carpinteros altamente cualificados, comprometidos con la excelencia y dedicados a proporcionar un servicio de la más alta calidad. Tu satisfacción es nuestra prioridad, y nuestro profesionalismo garantiza resultados excepcionales en cada proyecto.</p>
+      
+        <!-- Servicio 2 -->
+        <div class="col-md-6 col-lg-6 fade-in-up delay-1">
+          <div class="servicio h-100">
+            <img src="imagenes/imagen 4.jpg" alt="Puertas Correderas de Aluminio en Alicante - eficiencia y diseño" loading="lazy" class="img-fluid">
+            <div class="servicio-info">
+              <h3>Ventanas y Puertas de Aluminio en Alicante</h3>
+              <p>Nuestras ventanas y puertas de aluminio combinan estética, funcionalidad y eficiencia energética. Fabricamos e instalamos sistemas correderos, abatibles, oscilobatientes y elevables con los mejores perfiles de rotura de puente térmico y acristalamientos de control solar y baja emisividad, creando ambientes perfectamente aislados y luminosos con un importante ahorro energético.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-            <div class="card-icon"><img src="imagenes/iconos/acero.png" alt="Selección de materiales de alta calidad para carpintería de aluminio"></div>
-            <h3>Materiales de Primera Calidad</h3>
-            <p>Seleccionamos cuidadosamente cada material, asegurándonos de que solo los mejores componentes sean utilizados en tus proyectos. Nuestra experiencia nos permite elegir materiales de aluminio que no solo embellecen tu espacio, sino que también ofrecen la máxima eficiencia y durabilidad. Con nosotros, la calidad está asegurada en cada detalle.</p>
+      
+        <!-- Servicio 3 -->
+        <div class="col-md-6 col-lg-6 fade-in-up delay-2">
+          <div class="servicio h-100">
+            <img src="imagenes/imagen pergola.jpg" alt="Pérgolas Bioclimáticas Personalizadas en Alicante - confort exterior" loading="lazy" class="img-fluid">
+            <div class="servicio-info">
+              <h3>Pérgolas Bioclimáticas en Alicante</h3>
+              <p>Transformamos tus espacios exteriores con nuestras innovadoras pérgolas bioclimáticas, diseñadas para brindar máximo confort y control en cualquier época del año. Con lamas orientables motorizadas, sensores de lluvia y viento, e iluminación LED integrada, nuestras pérgolas te permiten disfrutar de tu terraza o jardín en cualquier condición climatológica con un diseño elegante y personalizado.</p>
+            </div>
+          </div>
         </div>
+      
+        <!-- Servicio 4 -->
+        <div class="col-md-6 col-lg-6 fade-in-up delay-3">
+          <div class="servicio h-100">
+            <img src="imagenes/imagen 2.jpg" alt="Cerramientos de Aluminio en Alicante - soluciones a medida" loading="lazy" class="img-fluid">
+            <div class="servicio-info">
+              <h3>Cerramientos y Mamparas en Alicante</h3>
+              <p>Especializados en cerramientos de aluminio para terrazas, porches y áticos, así como mamparas para baños y oficinas. Diseñamos soluciones que maximizan la luz natural, amplían el espacio útil de tu vivienda y mejoran el aislamiento térmico y acústico. Nuestros cerramientos combinan perfiles minimalistas con grandes acristalamientos para conseguir ambientes diáfanos y confortables todo el año.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-<section>
-  <div class="servicios-container">
-    <!-- Servicio 1 -->
-    <div class="servicio">
-      <img src="imagenes/imagen 3.jpg" alt="Expertos en Carpintería Metálica en Alicante">
-      <div class="servicio-info">
-        <h3>Carpintería Metálica General en Alicante</h3>
-        <p>En nuestra Carpintería Metálica en Alicante, ofrecemos servicios integrales en la fabricación e instalación de estructuras metálicas. Con una combinación de experiencia, técnica y precisión, aseguramos soluciones a medida que se adaptan perfectamente a tus necesidades, desde construcciones industriales hasta detalles decorativos para el hogar.</p>
+  <section class="cta-section py-5 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="mb-4">¿Buscas calidad y experiencia en carpintería de aluminio?</h2>
+          <p class="mb-4">En Aluminios del Sureste transformamos tus ideas en realidad. Solicita ahora un presupuesto sin compromiso y descubre cómo podemos mejorar tu hogar o negocio con nuestras soluciones personalizadas.</p>
+          <a href="paginas/contacto.html" class="btn-cta">Solicitar presupuesto gratuito</a>
+        </div>
       </div>
-  </div>
-  
-    <!-- Servicio 2 -->
-    <div class="servicio">
-      <img src="imagenes/imagen 4.jpg" alt="Puertas Correderas de Aluminio en Alicante">
-      <div class="servicio-info">
-        <h3>Puertas Correderas de Aluminio en Alicante</h3>
-        <p>Nuestras puertas correderas de aluminio en Alicante combinan estilo, funcionalidad y durabilidad. Diseñadas para maximizar el espacio y la luz natural, estas puertas son la solución perfecta para cualquier hogar o negocio que busque mejorar su estética y eficiencia energética con una solución moderna y de alta calidad.</p>
-      </div>
-  </div>
-  
-    <!-- Servicio 3 -->
-    <div class="servicio">
-      <img src="imagenes/imagen pergola.jpg" height="45.5%" alt="Pérgolas Bioclimáticas Personalizadas en Alicante">
-      <div class="servicio-info">
-        <h3>Pérgolas Bioclimáticas en Alicante</h3>
-        <p>Explora nuestras pérgolas bioclimáticas en Alicante, diseñadas para brindar la máxima comodidad y estilo en tu jardín o terraza. Estas estructuras modernas no solo realzan la belleza de tu espacio exterior, sino que también te permiten controlar la luz y la temperatura, creando un ambiente perfecto para relajarte o entretener a tus invitados en cualquier época del año.</p>
-      </div>
-  </div>
-  
-  <!-- Servicio 4 -->
-  <div class="servicio">
-    <img src="imagenes/imagen 2.jpg" alt="Variedad de Servicios de Carpintería de Aluminio en Alicante">
-    <div class="servicio-info">
-      <h3>Más Servicios en Alicante</h3>
-      <p>Descubre la amplia gama de soluciones que ofrecemos en carpintería de aluminio en Alicante. Desde proyectos a medida hasta servicios de mantenimiento y reparación, nuestra empresa se dedica a proporcionar soluciones integrales que se ajustan a tus necesidades específicas. Contacta con nosotros para explorar más opciones y encontrar la solución perfecta para tu hogar o negocio.</p>
     </div>
-</div>
+  </section>
 
-  </div>
-</section>
+  <footer class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 contacto mb-4 mb-md-0">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-phone"></i> 655599227</p>
+          <p><i class="fas fa-envelope"></i> alusur1@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Calle Azorin 44, Aspe, Alicante</p>
+          <p><i class="fas fa-clock"></i> Lunes a Viernes: 8:00 - 18:00</p>
+        </div>
+        <div class="col-md-4 col-lg-3 legales mb-4 mb-md-0">
+          <h3>Información Legal</h3>
+          <p><a href="paginas/politica.html">Política de Privacidad</a></p>
+          <p><a href="paginas/terminos.html">Términos y Condiciones</a></p>
+          <p><a href="paginas/cookies.html">Política de Cookies</a></p>
+          <p><a href="paginas/aviso-legal.html">Aviso Legal</a></p>
+        </div>
+        <div class="col-md-4 col-lg-3 redes-sociales mb-4 mb-md-0">
+          <h3>Síguenos</h3>
+          <div class="social-icons mb-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>Mantente al día de nuestras novedades y proyectos más recientes</p>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+          <h3>Servicios principales</h3>
+          <p><a href="paginas/servicios.html#ventanas">Ventanas de Aluminio</a></p>
+          <p><a href="paginas/servicios.html#puertas">Puertas de Aluminio</a></p>
+          <p><a href="paginas/servicios.html#cerramientos">Cerramientos</a></p>
+          <p><a href="paginas/servicios.html#pergolas">Pérgolas Bioclimáticas</a></p>
+        </div>
+      </div>
+      
+      <div class="seo-keywords mt-4">
+        <p><span>ventanas de aluminio Alicante, puertas de aluminio, cerramientos de aluminio, carpintería de aluminio, fabricación de aluminio, Alusur Alicante, pérgolas bioclimáticas, mamparas, ventanas oscilobatientes, puertas correderas aluminio</span></p>
+      </div>
+      
+      <div class="copyright mt-4 pb-3 text-center">
+        <p>Todos los derechos reservados &copy; 2024 Aluminios del Sureste | Carpintería de Aluminio en Alicante</p>
+      </div>
+    </div>
+  </footer>
 
-
-<footer>
-  <div class="contacto">
-    <h3>Contacto</h3>
-    <p>Teléfono: 655599227</p>
-    <p>Email: alusur1@gmail.com</p>
-    <p>Dirección: Calle Azorin 44, Aspe, Alicante</p>
-  </div>
-  <div class="legales">
-    <h3>Necesidades Legales</h3>
-    <p>Todos los derechos reservados &copy; 2024 Alusur</p>
-    <p><a href="politica.html">Política de Privacidad</a></p>
-    <p><a href="terminos.html">Términos y Condiciones</a></p>
-  </div>
-  <div class="seo-keywords">
-    <p><span>ventanas de aluminio en Alicante, puertas de aluminio, cerramientos de aluminio, carpintería de aluminio, fabricación de aluminio, Alusur Alicante</span></p>
-  </div>
-</footer>
+  <!-- Back to top button -->
+  <button class="scroll-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
 </body>
-
 </html>
