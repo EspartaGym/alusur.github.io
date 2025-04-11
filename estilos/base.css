@@ -52,15 +52,7 @@ h2 {
   position: relative;
 }
 
-h2:after {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  background-color: var(--color-acento);
-  bottom: -10px;
-  left: 0;
-}
+
 
 h2.text-center:after {
   left: 50%;
