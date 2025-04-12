@@ -1,0 +1,220 @@
+/* Estilos específicos para la página de Términos y Condiciones */
+
+/* Ajuste para el padding-top compensando el navbar fijo */
+body {
+    padding-top: 80px;
+  }
+  
+  /* Estilos para el encabezado de la página */
+  .titulo-principal {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primario);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .titulo-principal::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-primario), var(--color-acento));
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .subtitulo-legal {
+    font-size: 1rem;
+    color: var(--color-texto-suave);
+    font-style: italic;
+  }
+  
+  /* Estilos para las tarjetas de términos */
+  .terminos-container {
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+  
+  .terminos-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: var(--color-blanco);
+  }
+  
+  .terminos-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terminos-card .card-body {
+    padding: 2rem;
+  }
+  
+  /* Estilos para los títulos de sección */
+  .seccion-titulo {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+  }
+  
+  .seccion-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-acento);
+    border-radius: 1.5px;
+  }
+  
+  /* Estilos para las listas */
+  .terminos-lista {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .terminos-lista li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 0.5rem;
+  }
+  
+  .terminos-lista li::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-acento);
+    border-radius: 50%;
+    left: -1rem;
+    top: 0.6rem;
+  }
+  
+  /* Estilos para la información de contacto */
+  .terminos-contacto {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .terminos-contacto li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+  }
+  
+  .terminos-contacto li i {
+    color: var(--color-acento);
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .terminos-contacto li a {
+    color: var(--color-primario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .terminos-contacto li a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+  }
+  
+  /* Destacado para enlaces importantes */
+  .terminos-card a {
+    color: var(--color-primario);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .terminos-card a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+  }
+  
+  /* Efecto de animación para entradas de tarjetas */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.6s;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 991.98px) {
+    .terminos-content {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    
+    .titulo-principal {
+      font-size: 2rem;
+    }
+    
+    .terminos-card .card-body {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .titulo-principal {
+      font-size: 1.75rem;
+    }
+    
+    .seccion-titulo {
+      font-size: 1.35rem;
+    }
+    
+    .terminos-card .card-body {
+      padding: 1.25rem;
+    }
+  }
+  
+  /* Accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up {
+      animation: none !important;
+      opacity: 1 !important;
+    }
+    
+    .terminos-card {
+      transition: none !important;
+    }
+  }
