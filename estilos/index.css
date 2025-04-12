@@ -42,7 +42,7 @@
   
   .hero .titulo {
     font-size: 2.5rem;
-    color: var(--color-blanco);
+    color: #263ec9;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
@@ -612,3 +612,5 @@
     bottom: 0;
     z-index: -1;
   }
+
+  
